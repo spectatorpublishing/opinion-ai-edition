@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.22579796.chunk.css",
+    "main.js": "/static/js/main.12688cc6.chunk.js",
+    "main.js.map": "/static/js/main.12688cc6.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a1fbe87f.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a1fbe87f.js.map",
+    "static/js/2.830174cc.chunk.js": "/static/js/2.830174cc.chunk.js",
+    "static/js/2.830174cc.chunk.js.map": "/static/js/2.830174cc.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.22579796.chunk.css.map": "/static/css/main.22579796.chunk.css.map",
+    "static/js/2.830174cc.chunk.js.LICENSE.txt": "/static/js/2.830174cc.chunk.js.LICENSE.txt",
+    "static/media/primaryImage.9b7d3ab0.png": "/static/media/primaryImage.9b7d3ab0.png",
+    "static/media/spectator-logo.48429944.svg": "/static/media/spectator-logo.48429944.svg",
+    "static/media/tempcoverillo.6d202892.png": "/static/media/tempcoverillo.6d202892.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a1fbe87f.js",
+    "static/js/2.830174cc.chunk.js",
+    "static/css/main.22579796.chunk.css",
+    "static/js/main.12688cc6.chunk.js"
+  ]
+}
