@@ -58,7 +58,7 @@ const App = () => {
             <Route
               exact path='/photos'
               render={(props) => (
-                <Section {...props} articles={city_news_articles} header='Photos' next='Podcast' nextLink='/podcast' setSection={setSection}/>
+                <IlloSection {...props} articles={city_news_articles} header='Photos' next='Podcast' nextLink='/podcast' setSection={setSection}/>
               )}
             />
             <Route
