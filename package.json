@@ -1,8 +1,8 @@
 {
-  "name": "summer-fellowship-2022",
+  "name": "opinion-ai-edition",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://summerfellowship2022.columbiadailyspectator.com",
+  "homepage": "https://discourseonai.columbiaspectator.com",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
@@ -43,6 +43,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.1.0"
+    "gh-pages": "^3.2.3"
   }
 }
