@@ -4,7 +4,7 @@ import theme from '../theme';
 
 const Letter = () => (
     <Wrapper>
-        <Title>Letter From The Directors</Title>
+        <Title>Letter From The Editors</Title>
         <Text>
             <p>Dear readers, </p>
             <p>The first Spectator Summer Fellowship Program, held during the summer of 2020, arose as a response to the pandemic, which had brought the world to a standstill. With regular life suspended, Spectator launched SSFP as a way to simultaneously document the drastic changes that had transformed daily life and invite the participation of incoming Columbia students who might have faced accessibility barriers to joining Spectator.</p>
@@ -51,7 +51,6 @@ const Wrapper = styled.div`
     }`;
 
 const Title = styled.div`
-    font-family: 'EB Garamond', serif;
     font-weight: 500;
     font-size: 2.75rem;
     margin-top: auto;
@@ -64,7 +63,6 @@ const Title = styled.div`
 
 const Text = styled.div`
     p{
-        font-family: Khula;
         font-size: 1.125rem;
 
         @media only screen and (max-width: 768px){
@@ -85,7 +83,6 @@ const Spacing = styled.div`
 
 const Signature = styled.div`
     .name {
-        font-family: 'Nothing You Could Do';
         font-size: 1.625rem;
         margin: 0rem;
         text-align: left;
@@ -97,7 +94,6 @@ const Signature = styled.div`
     }
 
     .title {
-        font-family: Khula;
         font-size:  1.125rem;
         margin-bottom: 0.5rem;
 
@@ -108,7 +104,6 @@ const Signature = styled.div`
 
     .bold {
         font-weight: 600;
-        font-family: Khula;
         font-size:  1.25rem;
 
         @media only screen and (max-width: 768px){

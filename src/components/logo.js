@@ -2,34 +2,24 @@ import React from 'react';
 import styled from 'styled-components';
 import logo from '../assets/spectator-logo.svg';
 
-const Logo = ({lightLogo}) => {
+const Logo = () => {
     return (
-            <Wrapper href="https://www.columbiaspectator.com/">
-                {lightLogo ? <img src="https://spec-imagehosting.s3.amazonaws.com/CDSwhitemasthead.png" alt="Columbia Spectator Logo"></img> :
-                <img src="https://cds-archives.s3.amazonaws.com/pb/resources/img/spectator-logo.png" alt="Columbia Spectator Logo"></img>}
+            <Wrapper >
+                <a href="https://www.columbiaspectator.com/">
+                    <img src="https://spec-imagehosting.s3.amazonaws.com/CDSwhitemasthead.png" alt="Columbia Spectator Logo"></img>
+                </a>
             </Wrapper>
     );
 };
 
 export default Logo;
 
-const Wrapper = styled.a`
-    margin: 0rem;
-    padding: 0rem 0rem 0rem 3rem;
-    display: block;
-    height: 1.25rem;
+const Wrapper = styled.div`
+    margin: 2rem auto 1rem auto;
+    height: 1.75rem;
+    width: fit-content;
 
     img {
-        height: 1.25rem;
-    }
-
-    @media only screen and (max-width: 1023px){
-        padding: 0rem 0rem 0rem 1rem;
-        margin: auto 1rem auto 1rem;
-        height: 1.25rem;
-        
-        img {
-            height: 1.25rem;
-        }
+        height: 1.75rem;
     }
 `;

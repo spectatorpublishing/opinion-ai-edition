@@ -24,12 +24,10 @@ const Text = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-family: Khula;
     font-size: 20px;
     color: ${theme.colors.white};
     
     h2 {
-        font-family: Prata;
         font-weight: normal;
         font-size: 26px;
         text-transform: uppercase;

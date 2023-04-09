@@ -19,7 +19,6 @@ const HomeContainer = styled.div`
 
 const CreditsTitle = styled.div`
     align-items:center;
-    font-family: Prata;
     font-size: 2.25rem;
     text-transform: uppercase;
     text-align: center;

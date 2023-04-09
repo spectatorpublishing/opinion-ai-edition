@@ -12,7 +12,6 @@ const Banner = () => (
 export default Banner;
 
 const Wrapper = styled.div`
-    padding-top: 5em;
     display: flex;
     justify-content: right;
     flex-direction: column;
@@ -21,7 +20,11 @@ const Wrapper = styled.div`
 `;
 
 const CoverImgWrapper = styled.div`
-    padding: 0rem 5rem;
+    padding: 0rem 10rem;
+    
+    img {
+        height: 35vw;
+    }
 `;
 
 const TitleWrapper = styled.div`

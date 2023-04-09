@@ -35,7 +35,6 @@ const Card = styled.div`
 `;
 
 const Name = styled.div`
-    font-family: "Khula";
     font-weight: 400;
     font-size: 1.125rem;
     margin: 0 1.25rem 0 1.25rem;

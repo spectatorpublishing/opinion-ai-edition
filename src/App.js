@@ -14,6 +14,7 @@ import { eye_articles } from './data/articles';
 import { illustrations } from './data/articles';
 import { React, useState, useEffect } from 'react';
 import { sections } from './data/sections';
+import Logo from './components/logo';
 
 const App = () => {
   const [currentSection, setSection] = useState("Home");
@@ -38,7 +39,8 @@ const App = () => {
 
   return (
       <Router basename={process.env.PUBLIC_URL}>
-        <Navbar lightLogo={currentSection === "Home"} currentSection={currentSection} setSection={setSection}/>
+        <Logo />
+        <Navbar currentSection={currentSection} setSection={setSection}/>
         <ScrollToTop>
         <Switch>
             <Route

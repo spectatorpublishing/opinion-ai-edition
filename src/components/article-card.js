@@ -44,12 +44,10 @@ const Title = styled.div`
     font-size: 1.25rem;
     margin: 0 1.25rem 0 1.25rem;
     color: ${theme.colors.articleTitleBlue};
-    font-family: 'Bitter', serif;
     font-weight: 500;
 `;
 
 const Name = styled.div`
-    font-family: "Khula";
     font-weight: 400;
     font-size: 1.125rem;
     margin: 0 1.25rem 0 1.25rem;

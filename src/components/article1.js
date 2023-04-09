@@ -89,14 +89,12 @@ const Title = styled.div`
 
 const Text = styled.div`
     line-height: 3rem;
-    font-family: 'Bitter', serif;
     font-weight: 500;
     font-size: 2.25rem;
     margin: auto 1rem auto 1rem;
 `;
 
 const Author = styled.div`
-    font-family: Khula;
     font-size: 1.25rem;
     margin: 0rem 1rem 0rem 3rem;
 `;
