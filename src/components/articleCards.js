@@ -8,8 +8,7 @@ const Articles = styled.div`
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-image: url("https://summer-fellowship-2022.s3.amazonaws.com/SectionStrip.png");
-    background-size: cover;
+    background: white;
     padding: 3rem 5rem;
     margin: 5rem 0rem;
 
