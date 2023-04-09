@@ -13,25 +13,7 @@ import { sports_articles } from './data/articles';
 import { eye_articles } from './data/articles';
 import { illustrations } from './data/articles';
 import { React, useState, useEffect } from 'react';
-import styled from 'styled-components/macro';
 import { sections } from './data/sections';
-
-const PageWrapper = styled.div`
-  &.home {
-    background-image: url("https://summer-fellowship-2022.s3.amazonaws.com/Homebackground.png");
-  }
-
-  &.section {
-    background-image: url("https://summer-fellowship-2022.s3.amazonaws.com/Section+background.png");
-
-    @media (max-width: 768px) {
-      background-image: url("https://summer-fellowship-2022.s3.amazonaws.com/mobile+section+background.png");
-    }
-  }
-
-  background-size: cover;
-`;
-
 
 const App = () => {
   const [currentSection, setSection] = useState("Home");
@@ -56,8 +38,7 @@ const App = () => {
 
   return (
       <Router basename={process.env.PUBLIC_URL}>
-        <PageWrapper className={window.location.pathname == "/" ? "home" : "section"}>
-        <Navbar lightLogo={currentSection == "Home"} currentSection={currentSection} setSection={setSection}/>
+        <Navbar lightLogo={currentSection === "Home"} currentSection={currentSection} setSection={setSection}/>
         <ScrollToTop>
         <Switch>
             <Route
@@ -110,7 +91,6 @@ const App = () => {
             />
         </Switch>
         </ScrollToTop>
-        </PageWrapper>
       </Router>
   );
 }

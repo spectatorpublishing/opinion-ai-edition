@@ -18,12 +18,12 @@ const Wrapper = styled.div`
     
     &.scrolledHome{
         transition: all 0.5s ease;
-        background-color: ${theme.colors.blue};
+        background-color: ${theme.colors.black};
     }
 
     &.scrolledSection{
         transition: all 0.5s ease;
-        background-color: ${theme.colors.lightBlue};
+        background-color: ${theme.colors.black};
     }
 
     a {
