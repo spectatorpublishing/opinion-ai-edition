@@ -37,6 +37,10 @@ const Link = styled.div`
     border: 3px solid transparent;
     color: white;
 
+    @media only screen and (max-width: 768px){
+        padding: 0.5rem 0.5rem;
+    }
+
     &.active {
         padding-bottom: 0.2rem;
         border-bottom: 3px solid ${theme.colors.green};

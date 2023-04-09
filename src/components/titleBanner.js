@@ -25,6 +25,10 @@ const CoverImgWrapper = styled.div`
     img {
         height: 35vw;
     }
+
+    @media only screen and (max-width: 768px){
+        padding: 0rem 2rem;
+    }
 `;
 
 const TitleWrapper = styled.div`
@@ -57,5 +61,9 @@ const Title = styled.div`
   @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: #1FFDB2; }
+  }
+
+  @media only screen and (max-width: 768px){
+    font-size: 1.2rem;
   }
 `;

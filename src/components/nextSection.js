@@ -27,11 +27,6 @@ const Body = styled.div`
     display: flex;
     align-items: center;
     padding-left:2rem;
-
-    @media only screen and (max-width: 750px){
-        background: rgba(255, 255, 255, 0.75);
-        margin-left: 1rem;
-    }
 `
 
 const TextBox = styled.div`
