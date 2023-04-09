@@ -5,31 +5,15 @@ export const sections = [
         exact: true,
     },
     {
-        title: "University News",
-        url: "/uni-news",
-    },
-    {
-        title: "City News",
-        url: "/city-news",
-    },
-    {
-        title: "A&E",
-        url: "/a&e",
-    },
-    {
-        title: "Sports",
-        url: "/sports",
-    },
-    {
         title: "Opinion",
         url: "/opinion",
     },
     {
-        title: "The Eye",
-        url: "/eye",
+        title: "Photos",
+        url: "/photos",
     },
     {
-        title: "Illustrations",
-        url: "/illo",
+        title: "Podcast",
+        url: "/podcast",
     }
 ];

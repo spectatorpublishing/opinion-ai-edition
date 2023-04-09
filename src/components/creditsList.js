@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { credits } from '../data/credits';
+import theme from '../theme';
 
 const Wrapper = styled.div`
     margin: 0rem 5rem 0rem 5rem;    
@@ -25,7 +26,7 @@ const Text = styled.div`
     justify-content: center;
     font-family: Khula;
     font-size: 20px;
-    color: #000000;
+    color: ${theme.colors.white};
     
     h2 {
         font-family: Prata;

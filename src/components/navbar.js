@@ -1,14 +1,11 @@
 import { React, useState, useEffect } from 'react';
 import styled from 'styled-components/macro';
 import Logo from './logo'
-import { NavLink } from 'react-router-dom';
-import { device } from '../device';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdClose } from 'react-icons/md';
 import { IconContext } from 'react-icons/lib';
 import theme from '../theme';
 import { sections } from '../data/sections';
-import { HashLink } from 'react-router-hash-link';
 import { NavHashLink } from 'react-router-hash-link';
 
 const Wrapper = styled.div`
