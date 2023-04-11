@@ -52,7 +52,7 @@ const App = () => {
             <Route
               exact path='/opinion'
               render={(props) => (
-                <Section {...props} articles={uni_news_articles} header='Opinion' next='Photos' nextLink='/photos' setSection={setSection}/>
+                <Section {...props} articles={uni_news_articles} isOpinionSection header='Opinion' next='Photos' nextLink='/photos' setSection={setSection}/>
               )}
             />
             <Route

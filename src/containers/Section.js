@@ -6,7 +6,7 @@ import ArticleCards from '../components/articleCards';
 import NextSection from '../components/nextSection';
 import ArticleCard from '../components/article-card';
 
-const Section = ({articles, header, next, nextLink, setSection}) => {
+const Section = ({articles, header, next, nextLink, setSection, isOpinionSection}) => {
 
     const handleMenuItemOnClick = () => {
         if (next === "Credits") {
@@ -20,7 +20,7 @@ const Section = ({articles, header, next, nextLink, setSection}) => {
 
     return(
         <main>
-        <SectionTitle title={header}/>
+        <SectionTitle isOpinionSection={isOpinionSection} title={header}/>
         <Desktop>
         <Article1
             article1={articles[0]}

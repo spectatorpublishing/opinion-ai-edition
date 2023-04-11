@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 import tempcoverillo from '../assets/tempcoverillo.png'
+import TypeText from './TypeText';
 
 const Banner = () => (
     <Wrapper>
         <CoverImgWrapper><img src={tempcoverillo} alt="Cover Illustration"></img></CoverImgWrapper>
-        <TitleWrapper><Title>discourse on <span className='green'>AI</span></Title></TitleWrapper>
+        <TitleWrapper><TypeText>discourse on <span className='green'>AI</span></TypeText></TitleWrapper>
     </Wrapper>
 );
 
@@ -33,37 +34,10 @@ const CoverImgWrapper = styled.div`
 
 const TitleWrapper = styled.div`
     margin: 2rem 0rem 1rem auto;
+
+    font-size: 3rem;
+
+    @media only screen and (max-width: 768px){
+        font-size: 1.2rem;
+    }
 `
-
-const Title = styled.div`
-  overflow: hidden;
-  border-right: .15em solid #1FFDB2; 
-  white-space: nowrap;
-  margin: 0 auto; 
-  letter-spacing: .15em;
-  font-family: 'Press Start 2P', cursive;
-  color: white;
-  .green {
-    color: #1FFDB2;
-  }
-  font-size: 3rem;
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #1FFDB2; }
-  }
-
-  @media only screen and (max-width: 768px){
-    font-size: 1.2rem;
-  }
-`;

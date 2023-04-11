@@ -1,42 +1,34 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 import theme from '../theme';
+import TypeText from './TypeText';
 
 const Box = styled.div`
-    margin: 1.25rem 0 3rem 0;
-    position: relative;
+  margin: 1.25rem 0 3rem 0;
+  position: relative;
+  width: fit-content;
 
-    @media only screen and (max-width: 768px) {
-      margin: 1.25rem 0 1rem 0;
-    }
+  @media only screen and (max-width: 768px) {
+    margin: 1.25rem 0 1rem 0;
+  }
 `;
 
 const Title = styled.div`
-    font-weight: 400;
-    font-size: 4rem;
-    padding: ${props => props.isEyeSection ? '1rem 1.25rem 0 8.75rem' : '5rem 1.25rem 0 8.75rem'};
-    color: white;
+  margin: 2rem auto 1rem 10rem;
+  font-family: 'Press Start 2P', cursive;
+  text-transform: uppercase;
 
-    @media only screen and (max-width: 768px) {
-        font-size: 3rem;
-        padding: 0.25rem 1.25rem 0 2rem;
-    }
+  font-size: 2rem;
 
-    @media only screen and (max-width: 500px) {
-      font-size: 2rem;
-      padding: 0.25rem 1rem 0 2rem;
+  @media only screen and (max-width: 768px){
+      font-size: 1.2rem;
   }
-
-  @media only screen and (max-width: 320px) {
-    font-size: 1.5rem;
-    padding: 0.25rem 1rem 0 2rem;
-}
 `;
 
-const SectionTitle = ({ title, isEyeSection }) => {
+const SectionTitle = ({ title, isOpinionSection }) => {
     return (
       <Box> 
-        <Title isEyeSection={isEyeSection}> {title} </Title>
+        <Title>{isOpinionSection ? <TypeText>{title}s on <span className='green'>AI</span></TypeText> : <TypeText>{title}</TypeText>}</Title>
       </Box>
     );
   };
