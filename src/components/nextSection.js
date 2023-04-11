@@ -2,13 +2,14 @@ import React from 'react';
 import styled from 'styled-components/macro';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import arrow from './images/arrow.png'
 
 const Wrapper = styled.div`
     border: none;
     background: transparent;
     display: flex;
     flex-direction: row;
-    margin: 4rem 2rem 4rem auto;
+    margin: 4rem 4rem 4rem auto;
     padding-bottom: 2rem;
 
     a {
@@ -44,10 +45,14 @@ const TextBox = styled.div`
 `
 
 const NextText = styled.div`
-white-space: nowrap;
+    white-space: nowrap;
     display: flex;
     text-align: right;
     font-size: 30px;
+
+    img {
+        margin-left: 1rem;
+    }
 
     @media only screen and (max-width: 750px){
         font-size: 20px;
@@ -64,7 +69,7 @@ const NextSection = ( {nextseclink, nextsec, image, setSection} ) => { //add ima
         <HashLink to={nextseclink} style={{ textDecoration: 'none' }}>
         <Body>
             <TextBox>
-                <NextText>Next: {nextsec}</NextText>
+                <NextText>Next: {nextsec} <img src={arrow} alt="right next arrow"/></NextText>
                 <Begin></Begin>
             </TextBox>
         </Body>

@@ -21,7 +21,6 @@ const Letter = () => (
             <Spacing/>
             <Signature><div className='name'>Derek Ng</div><div className='title'>Managing Editor of The Eye</div></Signature>
         </Signatures>
-        <Signature><div className="bold">SSFP Co-Directors</div></Signature>
     </Wrapper>
 );
 
@@ -96,6 +95,7 @@ const Signature = styled.div`
     .title {
         font-size:  1.125rem;
         margin-bottom: 0.5rem;
+        COLOR: #D700FC;
 
         @media only screen and (max-width: 768px){
             font-size: 1rem;

@@ -6,6 +6,7 @@ import Letter from '../components/editorLetter';
 import NextSection from '../components/nextSection';
 import Banner from '../components/titleBanner';
 import Credits from './credits';
+import theme from '../theme';
 
 const HomeContainer = styled.div`
     margin-bottom: 5rem;
@@ -23,6 +24,7 @@ const CreditsTitle = styled.div`
     text-transform: uppercase;
     text-align: center;
     margin: 0rem 5rem 0rem 5rem;
+    color: ${theme.colors.green};
 
     @media only screen and (max-width: 750px) {
         text-align: center;
@@ -55,7 +57,7 @@ const Home = ({next, nextLink, setSection}) => {
                 <NextSection setSection={() => setSection(next)} nextseclink={nextLink} nextsec={next} image={image}></NextSection>
             </HomeContainer>
             <Padding id="credits"/>
-            <CreditsTitle>Credits</CreditsTitle>
+            <CreditsTitle>Staff Who Made This Issue Possible</CreditsTitle>
             <Credits />
         </>
     )
