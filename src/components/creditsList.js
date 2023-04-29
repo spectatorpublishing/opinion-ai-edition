@@ -87,12 +87,6 @@ const CreditsList = () => {
                 <Text>
                     <Column>
                         <SubDiv>
-                            {credits['SSFP'].map(person => (
-                                person.staff_name !== "" ?
-                                    <p>{person.staff_name}, {person.title}</p> : <Padding />
-                            ))}
-                        </SubDiv>
-                        <SubDiv>
                             <h2>Corporate Board</h2>
                             {credits['Corporate Board'].map(person => (
                                 <p>{person.staff_name}, {person.title}</p>
@@ -106,19 +100,7 @@ const CreditsList = () => {
                         </SubDiv>
                         <SubDiv>
                             <h2>Lead Illustration By</h2>
-                            <p>Ainhoa Petri-Hidalgo, Fellow</p>
-                            <p>Ena Selman-Housein, Fellow</p>
-                            <p>Yingjie Wang, Illustrations Editor</p>
-                        </SubDiv>
-                        <SubDiv>
-                            <h2>University News</h2>
-                            {credits['University News'].map(person => (
-                                <p>{person.staff_name}, {person.title}</p>
-                            ))}
-                        </SubDiv>
-                        <SubDiv>
-                            <h2>City News</h2>
-                            {credits['City News'].map(person => (
+                            {credits['Cover Illustration'].map(person => (
                                 <p>{person.staff_name}, {person.title}</p>
                             ))}
                         </SubDiv>
@@ -129,26 +111,8 @@ const CreditsList = () => {
                             ))}
                         </SubDiv>
                         <SubDiv>
-                            <h2>Sports</h2>
-                            {credits['Sports'].map(person => (
-                                <p>{person.staff_name}, {person.title}</p>
-                            ))}
-                        </SubDiv>
-                        <SubDiv>
-                            <h2>Arts and Entertainment</h2>
-                            {credits['Arts and Entertainment'].map(person => (
-                                <p>{person.staff_name}, {person.title}</p>
-                            ))}
-                        </SubDiv>
-                        <SubDiv>
-                            <h2>The Eye</h2>
-                            {credits['The Eye'].map(person => (
-                                <p>{person.staff_name}, {person.title}</p>
-                            ))}
-                        </SubDiv>
-                        <SubDiv>
-                            <h2>Graphics</h2>
-                            {credits['Graphics'].map(person => (
+                            <h2>Audio</h2>
+                            {credits['Audio'].map(person => (
                                 <p>{person.staff_name}, {person.title}</p>
                             ))}
                         </SubDiv>
@@ -170,12 +134,6 @@ const CreditsList = () => {
                                 <p>{person.staff_name}, {person.title}</p>
                             ))}
                         </SubDiv>
-                        <SubDiv>
-                            <h2>Engagement</h2>
-                            {credits['Engagement'].map(person => (
-                                <p>{person.staff_name}, {person.title}</p>
-                            ))}
-                        </SubDiv>
                     </Column>
                 </Text>
             </Wrapper>
@@ -186,33 +144,21 @@ const CreditsList = () => {
                 <Text>
                     <Direction>
                         <Column>
-                        <SubDiv>
-                                {credits['SSFP'].map(person => (
-                                    person.staff_name !== "" ?
-                                        <p>{person.staff_name}, {person.title}</p> : <Padding />
-                                ))}
-                            </SubDiv>
                             <SubDiv>
-                                <h2>University News</h2>
-                                {credits['University News'].map(person => (
+                                <h2>Corporate Board</h2>
+                                {credits['Corporate Board'].map(person => (
                                     <p>{person.staff_name}, {person.title}</p>
                                 ))}
                             </SubDiv>
                             <SubDiv>
-                                <h2>City News</h2>
-                                {credits['City News'].map(person => (
+                                <h2>Audio</h2>
+                                {credits['Audio'].map(person => (
                                     <p>{person.staff_name}, {person.title}</p>
                                 ))}
                             </SubDiv>
                             <SubDiv>
-                                <h2>Arts and Entertainment</h2>
-                                {credits['Arts and Entertainment'].map(person => (
-                                    <p>{person.staff_name}, {person.title}</p>
-                                ))}
-                            </SubDiv>
-                            <SubDiv>
-                                <h2>Graphics</h2>
-                                {credits['Graphics'].map(person => (
+                                <h2>Opinion</h2>
+                                {credits['Opinion'].map(person => (
                                     <p>{person.staff_name}, {person.title}</p>
                                 ))}
                             </SubDiv>
@@ -222,20 +168,8 @@ const CreditsList = () => {
                                     <p>{person.staff_name}, {person.title}</p>
                                 ))}
                             </SubDiv>
-                            <SubDiv>
-                                <h2>Engagement</h2>
-                                {credits['Engagement'].map(person => (
-                                    <p>{person.staff_name}, {person.title}</p>
-                                ))}
-                            </SubDiv>
                         </Column>
                         <Column>
-                            <SubDiv>
-                                <h2>Corporate Board</h2>
-                                {credits['Corporate Board'].map(person => (
-                                    <p>{person.staff_name}, {person.title}</p>
-                                ))}
-                            </SubDiv>
                             <SubDiv>
                                 <h2>Design and Development</h2>
                                 {credits['Design and Development'].map(person => (
@@ -243,14 +177,8 @@ const CreditsList = () => {
                                 ))}
                             </SubDiv>
                             <SubDiv>
-                            <h2>Lead Illustration By</h2>
-                            <p>Ainhoa Petri-Hidalgo, Fellow</p>
-                            <p>Ena Selman-Housein, Fellow</p>
-                            <p>Yingjie Wang, Illustrations Editor</p>
-                            </SubDiv>
-                            <SubDiv>
-                                <h2>Sports</h2>
-                                {credits['Sports'].map(person => (
+                                <h2>Lead Illustration By</h2>
+                                {credits['Cover Illustration'].map(person => (
                                     <p>{person.staff_name}, {person.title}</p>
                                 ))}
                             </SubDiv>
@@ -263,18 +191,6 @@ const CreditsList = () => {
                             <SubDiv>
                                 <h2>Illustrations</h2>
                                 {credits['Illustrations'].map(person => (
-                                    <p>{person.staff_name}, {person.title}</p>
-                                ))}
-                            </SubDiv>
-                            <SubDiv>
-                                <h2>Opinion</h2>
-                                {credits['Opinion'].map(person => (
-                                    <p>{person.staff_name}, {person.title}</p>
-                                ))}
-                            </SubDiv>
-                            <SubDiv>
-                                <h2>The Eye</h2>
-                                {credits['The Eye'].map(person => (
                                     <p>{person.staff_name}, {person.title}</p>
                                 ))}
                             </SubDiv>
@@ -289,65 +205,21 @@ const CreditsList = () => {
                 <Text>
                     <Direction>
                         <Column>
-                            <SubDiv>
-                                {credits['SSFP'].map(person => (
-                                    person.staff_name !== "" ?
-                                        <p>{person.staff_name}, {person.title}</p> : <Padding />
-                                ))}
-                            </SubDiv>
-                            <SubDiv>
-                            <h2>Lead Illustration By</h2>
-                            <p>Ainhoa Petri-Hidalgo, Fellow</p>
-                            <p>Ena Selman-Housein, Fellow</p>
-                            <p>Yingjie Wang, Illustrations Editor</p>
-                            </SubDiv>
-                            <SubDiv>
-                                <h2>Graphics</h2>
-                                {credits['Graphics'].map(person => (
-                                    <p>{person.staff_name}, {person.title}</p>
-                                ))}
-                            </SubDiv>
-                            <SubDiv>
-                                <h2>Sports</h2>
-                                {credits['Sports'].map(person => (
-                                    <p>{person.staff_name}, {person.title}</p>
-                                ))}
-                            </SubDiv>
-                            <SubDiv>
-                                <h2>Illustrations</h2>
-                                {credits['Illustrations'].map(person => (
-                                    <p>{person.staff_name}, {person.title}</p>
-                                ))}
-                            </SubDiv>
-                            <SubDiv>
-                                <h2>The Eye</h2>
-                                {credits['The Eye'].map(person => (
-                                    <p>{person.staff_name}, {person.title}</p>
-                                ))}
-                            </SubDiv>
-                        </Column>
-                        <Column>
-                            <SubDiv>
+                        <SubDiv>
                                 <h2>Corporate Board</h2>
                                 {credits['Corporate Board'].map(person => (
                                     <p>{person.staff_name}, {person.title}</p>
                                 ))}
                             </SubDiv>
                             <SubDiv>
-                                <h2>City News</h2>
-                                {credits['City News'].map(person => (
+                                <h2>Lead Illustration By</h2>
+                                {credits['Cover Illustration'].map(person => (
                                     <p>{person.staff_name}, {person.title}</p>
                                 ))}
                             </SubDiv>
                             <SubDiv>
-                                <h2>Arts and Entertainment</h2>
-                                {credits['Arts and Entertainment'].map(person => (
-                                    <p>{person.staff_name}, {person.title}</p>
-                                ))}
-                            </SubDiv>
-                            <SubDiv>
-                                <h2>Opinion</h2>
-                                {credits['Opinion'].map(person => (
+                                <h2>Illustrations</h2>
+                                {credits['Illustrations'].map(person => (
                                     <p>{person.staff_name}, {person.title}</p>
                                 ))}
                             </SubDiv>
@@ -360,26 +232,28 @@ const CreditsList = () => {
                         </Column>
                         <Column>
                             <SubDiv>
+                                <h2>Audio</h2>
+                                {credits['Audio'].map(person => (
+                                    <p>{person.staff_name}, {person.title}</p>
+                                ))}
+                            </SubDiv>
+                            <SubDiv>
+                                <h2>Opinion</h2>
+                                {credits['Opinion'].map(person => (
+                                    <p>{person.staff_name}, {person.title}</p>
+                                ))}
+                            </SubDiv>
+                        </Column>
+                        <Column>
+                            <SubDiv>
                                 <h2>Design and Development</h2>
                                 {credits['Design and Development'].map(person => (
                                     <p>{person.staff_name}, {person.title}</p>
                                 ))}
                             </SubDiv>
                             <SubDiv>
-                                <h2>University News</h2>
-                                {credits['University News'].map(person => (
-                                    <p>{person.staff_name}, {person.title}</p>
-                                ))}
-                            </SubDiv>
-                            <SubDiv>
                                 <h2>Copy</h2>
                                 {credits['Copy'].map(person => (
-                                    <p>{person.staff_name}, {person.title}</p>
-                                ))}
-                            </SubDiv>
-                            <SubDiv>
-                                <h2>Engagement</h2>
-                                {credits['Engagement'].map(person => (
                                     <p>{person.staff_name}, {person.title}</p>
                                 ))}
                             </SubDiv>
