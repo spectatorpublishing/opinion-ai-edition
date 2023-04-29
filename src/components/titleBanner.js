@@ -1,11 +1,10 @@
 import React from 'react';
 import styled from 'styled-components/macro';
-import tempcoverillo from '../assets/tempcoverillo.png'
 import TypeText from './TypeText';
 
 const Banner = () => (
     <Wrapper>
-        <CoverImgWrapper><img src={tempcoverillo} alt="Cover Illustration"></img></CoverImgWrapper>
+        <CoverImgWrapper><img src="https://cloudfront-us-east-1.images.arcpublishing.com/spectator/EBGQL7LVLNF6VETHGRGTU2RFBE.jpg" alt="Cover Illustration"></img></CoverImgWrapper>
         <TitleWrapper><TypeText>discourse on <span className='green'>AI</span></TypeText></TitleWrapper>
     </Wrapper>
 );

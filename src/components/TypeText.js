@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+import theme from "../theme";
 
 const TypeTextBox = styled.div`
     overflow: hidden;
-    border-right: 0.5rem solid #1FFDB2; 
+    border-right: 0.5rem solid ${theme.colors.green}; 
     white-space: nowrap;
     margin: 0 auto; 
     letter-spacing: .15em;
@@ -11,7 +12,7 @@ const TypeTextBox = styled.div`
     color: white;
     
     .green {
-        color: #1FFDB2;
+        color: ${theme.colors.green};
     }
 
     animation: 
@@ -27,7 +28,7 @@ const TypeTextBox = styled.div`
     /* The typewriter cursor effect */
     @keyframes blink-caret {
         from, to { border-color: transparent }
-        50% { border-color: #1FFDB2; }
+        50% { border-color: ${theme.colors.green}; }
     }
 `
 
