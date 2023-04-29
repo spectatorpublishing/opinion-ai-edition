@@ -11,6 +11,11 @@ const Wrapper = styled.div`
     flex-direction: row;
     margin: 4rem 4rem 4rem auto;
     padding-bottom: 2rem;
+    transition: transform 0.5s;
+    
+    :hover {
+        transform: translate(10px, 0px);
+    }
 
     a {
         margin-left: auto;
@@ -18,8 +23,9 @@ const Wrapper = styled.div`
     }
 
     @media only screen and (max-width: 1160px){
-        font-size: 16px;
+        font-size: 1rem;
         flex-direction: row-reverse;
+        margin: 4rem 4rem 0rem auto;
     }
 `
 
@@ -38,10 +44,6 @@ const TextBox = styled.div`
     margin-left: auto;
     font-size: 24px;
     font-family: 'Press Start 2P', cursive;
-
-    @media only screen and (max-width: 750px){
-        font-size: 16px;
-    }
 `
 
 const NextText = styled.div`
@@ -55,14 +57,11 @@ const NextText = styled.div`
     }
 
     @media only screen and (max-width: 750px){
-        font-size: 20px;
+        font-size: 16px;
     }
 `
 
-const Begin = styled.div`
-`
-
-const NextSection = ( {nextseclink, nextsec, image, setSection} ) => { //add image prop if needed, currently calling from file
+const NextSection = ( {nextseclink, nextsec, setSection} ) => { //add image prop if needed, currently calling from file
    
     return (
        <Wrapper onClick={setSection}>
@@ -70,7 +69,6 @@ const NextSection = ( {nextseclink, nextsec, image, setSection} ) => { //add ima
         <Body>
             <TextBox>
                 <NextText>Next: {nextsec} <img src={arrow} alt="right next arrow"/></NextText>
-                <Begin></Begin>
             </TextBox>
         </Body>
         </HashLink>

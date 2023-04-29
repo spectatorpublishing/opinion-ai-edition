@@ -29,6 +29,7 @@ const CoverImgWrapper = styled.div`
 
     @media only screen and (max-width: 768px){
         padding: 0rem 2rem;
+        margin: 0rem auto;
     }
 `;
 
@@ -38,6 +39,6 @@ const TitleWrapper = styled.div`
     font-size: 3rem;
 
     @media only screen and (max-width: 768px){
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 `
