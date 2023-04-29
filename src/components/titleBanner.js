@@ -30,6 +30,11 @@ const CoverImgWrapper = styled.div`
     @media only screen and (max-width: 768px){
         padding: 0rem 2rem;
         margin: 0rem auto;
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
     }
 `;
 
@@ -40,5 +45,6 @@ const TitleWrapper = styled.div`
 
     @media only screen and (max-width: 768px){
         font-size: 1.1rem;
+        margin: 2rem 2rem 1rem auto;
     }
 `
