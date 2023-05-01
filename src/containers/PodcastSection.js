@@ -2,6 +2,21 @@ import React from 'react';
 import styled from 'styled-components';
 import SectionTitle from '../components/section-title';
 import NextSection from '../components/nextSection';
+import theme from '../theme';
+
+//style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"
+
+const PodcastLink = styled.div`
+    font-size: 10px; 
+    color: #cccccc;
+    line-break: anywhere;
+    word-break: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; 
+    font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans,Garuda, Verdana, Tahoma, sans-serif;
+    font-weight: 100;
+`
 
 const PodcastSection = ({ header, next, nextLink, setSection, isOpinionSection }) => {
 
@@ -19,20 +34,15 @@ const PodcastSection = ({ header, next, nextLink, setSection, isOpinionSection }
         <main>
             <SectionTitle isOpinionSection={isOpinionSection} title={header} />
             <PodcastWrapper>
-                <iframe style={{ borderRadius: "12px" }} src="https://open.spotify.com/embed/episode/2iC7btGumjDU6RQJl9oxjJ?utm_source=generator" width="100%" height="352" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe width="100%" height="300" scrolling="no" frameBorder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1503578917&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                <PodcastLink>
+                    <a href="https://soundcloud.com/specopiniondebate" title="Discourse and Debate" target="_blank" style={{color: "#cccccc", textDecoration: "none"}}>Discourse and Debate</a> · 
+                    <a href="https://soundcloud.com/specopiniondebate/discourse-and-debate-ep1" title="Discourse and Debate: How do we grapple with ChatGPT and the evolution of AI?" target="_blank" style={{color: "#cccccc", textDecoration: "none"}}>Discourse and Debate: How do we grapple with ChatGPT and the evolution of AI?</a>
+                </PodcastLink>
             </PodcastWrapper>
             <Text>
-                <p>The first Spectator Summer Fellowship Program, held during the summer of 2020, arose as a response to the pandemic, which had brought the world to a standstill. With regular life suspended, Spectator launched SSFP as a way to simultaneously document the drastic changes that had transformed daily life and invite the participation of incoming Columbia students who might have faced accessibility barriers to joining Spectator.</p>
-                <p><strong>Transcript:</strong></p>
-                <p>Dear readers, </p>
-                <p>The first Spectator Summer Fellowship Program, held during the summer of 2020, arose as a response to the pandemic, which had brought the world to a standstill. With regular life suspended, Spectator launched SSFP as a way to simultaneously document the drastic changes that had transformed daily life and invite the participation of incoming Columbia students who might have faced accessibility barriers to joining Spectator.</p>
-                <p>That cohort’s success can be seen not just in the quality of the content it produced, but in the  composition of Spectator’s current leaders. Many of the 2020 SSFP fellows now hold managing and deputy board positions at Spectator.</p>
-                <p>While our lives may be less affected by the pandemic now than they were two years ago, we launched SSFP 2022 this year with a similar objective as its first iteration: to get incoming students excited about and involved with Spectator before stepping onto campus.</p>
-                <p>During this program, we welcomed 56 incoming undergraduates, including transfer and dual-degree students, from around the world to embark on a two-part journey. For the first seven days, fellows engaged with 19 staff-led workshops introducing them to the fundamentals of journalism and the work of nearly every Spectator section. These online workshops were offered both synchronously and asynchronously to accommodate fellows’ time zones and other personal circumstances. For the remainder of the program, each fellow was assigned a mentor from current Spectator staff, who walked them through the creation of their first articles, videos, graphics, and illustrations.</p>
-                <p>This edition is the culmination of those projects. It has blown our expectations out of the water.</p>
-                <p>We’ve been impressed by our fellows’ engagement and depth of thought as they’ve grappled with the challenging concepts that comprise journalism, many of which have been novel to them. We’re also incredibly grateful for all of the wonderful Spectator staffers who have produced robust workshops, provided quality mentorship, and created this webpage you’re reading now—many while simultaneously working full-time jobs or internships.</p>
-                <p>We have no doubt that this creative, empathetic, and energetic fellowship class has the potential to become part of the next generation of great journalists, engineers, and business leaders.</p>
-                <p>With all our very best,</p>
+                <p>In this inaugural podcast for Discourse and Debate, a joint venture with Spectator’s editorial page, Jack Cleeve, CC ’25, Soham Mehta, CC ’24, and Sydney Goldson, CC ’25, sit down with Avian Muñoz, CC ’25, to talk about the influence that ChatGPT might have on academia and the workforce. In discussing tips on how to navigate this unfamiliar new horizon, Mehta encourages us “to have empathy and have unusual worldviews because that’s something that the structure of large language models can’t really take into account. It’s operating on limited information. It’s got limited ability to extrapolate.”</p>
+                <a href="https://www.columbiaspectator.com/opinion/2023/04/30/discourse-and-debate-how-do-we-grapple-with-chatgpt-and-the-evolution-of-ai/"><strong>Transcript</strong></a>
             </Text>
             <NextSection setSection={handleMenuItemOnClick} nextseclink={nextLink} nextsec={next} image="https://patch.com/img/cdn20/users/23306266/20200814/041504/styles/patch_image/public/columbia-university-building___14161440408.jpg"></NextSection>
         </main>
@@ -51,6 +61,13 @@ const PodcastWrapper = styled.div`
 
 const Text = styled.div`
     margin: 3rem 10rem;
+
+    a {
+        margin-top: 2rem;
+        text-decoration: none;
+        color: ${theme.colors.green};
+        font-size: 1.2rem;
+    }
 
     @media only screen and (max-width: 768px){
         margin: 3rem 3rem;

@@ -7,19 +7,15 @@ const Letter = () => (
         <Title>Letter From The Editors</Title>
         <Text>
             <p>Dear readers, </p>
-            <p>The first Spectator Summer Fellowship Program, held during the summer of 2020, arose as a response to the pandemic, which had brought the world to a standstill. With regular life suspended, Spectator launched SSFP as a way to simultaneously document the drastic changes that had transformed daily life and invite the participation of incoming Columbia students who might have faced accessibility barriers to joining Spectator.</p>
-            <p>That cohort’s success can be seen not just in the quality of the content it produced, but in the  composition of Spectator’s current leaders. Many of the 2020 SSFP fellows now hold managing and deputy board positions at Spectator.</p>
-            <p>While our lives may be less affected by the pandemic now than they were two years ago, we launched SSFP 2022 this year with a similar objective as its first iteration: to get incoming students excited about and involved with Spectator before stepping onto campus.</p>
-            <p>During this program, we welcomed 56 incoming undergraduates, including transfer and dual-degree students, from around the world to embark on a two-part journey. For the first seven days, fellows engaged with 19 staff-led workshops introducing them to the fundamentals of journalism and the work of nearly every Spectator section. These online workshops were offered both synchronously and asynchronously to accommodate fellows’ time zones and other personal circumstances. For the remainder of the program, each fellow was assigned a mentor from current Spectator staff, who walked them through the creation of their first articles, videos, graphics, and illustrations.</p>
-            <p>This edition is the culmination of those projects. It has blown our expectations out of the water.</p>
-            <p>We’ve been impressed by our fellows’ engagement and depth of thought as they’ve grappled with the challenging concepts that comprise journalism, many of which have been novel to them. We’re also incredibly grateful for all of the wonderful Spectator staffers who have produced robust workshops, provided quality mentorship, and created this webpage you’re reading now—many while simultaneously working full-time jobs or internships.</p>
-            <p>We have no doubt that this creative, empathetic, and energetic fellowship class has the potential to become part of the next generation of great journalists, engineers, and business leaders.</p>
-            <p>With all our very best,</p>
+            <p>The central objective of Spectator's opinion section is, verbatim, “to reflect and direct campus and community discourse.” Achieving this aim not only means publishing pieces authored by a diverse pool of voices, but also expanding the horizons of what opinion journalism can look like. At its conception in 2017, <i>Discourse and Debate</i> entailed columnists from across a range of backgrounds engaging in spoken and written dialogue with one another about polarizing issues with the goal of highlighting our community's many differing beliefs.</p>
+            <p>It is our great pleasure to announce that after a years-long, pandemic-induced hiatus, <i>Discourse and Debate</i> is at last returning to Spectator's opinion page. In our reimagining of the project, we have sought to make these dialogues more accessible than ever before by including both traditional contributor-authored op-eds and a recording of the verbal exchange between them in podcast form.</p>
+            <p>In this special edition, we examine ChatGPT and investigate the ways artificial intelligence has already begun to seep into the daily lives of our community. Bringing together contributors from diverse backgrounds and different disciplines, this project seeks to explore what it means for us to embrace AI, and the reasons we might be cautious about doing so.</p>
+            <p>All the very best,</p>
         </Text>
         <Signatures>
-            <Signature className='left'><div className='name'>Irie Sentner</div><div className='title'>University News Editor</div></Signature>
+            <Signature className='left'><div className='name'>Milène Klein</div><div className='title'>Editorial Page Editor</div></Signature>
             <Spacing/>
-            <Signature><div className='name'>Derek Ng</div><div className='title'>Managing Editor of The Eye</div></Signature>
+            <Signature><div className='name'>Avian Muñoz</div><div className='title'>Administrative Deputy Editorial Page Editor</div></Signature>
         </Signatures>
     </Wrapper>
 );
@@ -54,6 +50,7 @@ const Title = styled.div`
     font-size: 2.75rem;
     margin-top: auto;
     margin-bottom: auto;
+    color: ${theme.colors.green};
 
     @media only screen and (max-width: 768px){
         font-size: 1.188rem;
